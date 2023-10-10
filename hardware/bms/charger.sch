@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -13,4 +13,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L bms:BQ24610 U?
+U 1 1 6527E24D
+P 6350 2800
+F 0 "U?" H 5400 3150 50  0000 C CNN
+F 1 "BQ24610" H 5950 3150 50  0000 C CNN
+F 2 "" H 4550 2700 50  0001 C CNN
+F 3 "" H 4550 2700 50  0001 C CNN
+	1    6350 2800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

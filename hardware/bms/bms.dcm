@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BQ76952
+D Lithium battery monitor, 3-16 cells, integrated balancing, I2C interface
+K lithium battery balance charge afe
+F http://www.ti.com/lit/gpn/bq76940
+$ENDCMP
+#
+#End Doc Library
