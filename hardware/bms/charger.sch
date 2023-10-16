@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -24,4 +24,8 @@ F 3 "" H 4550 2700 50  0001 C CNN
 	1    6350 2800
 	1    0    0    -1  
 $EndComp
+Text HLabel 3300 2600 0    50   Input ~ 0
+CHG_IN+
+Text HLabel 3350 2900 0    50   Output ~ 0
+CHG_OUT+
 $EndSCHEMATC
