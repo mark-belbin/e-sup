@@ -1,3 +1,5 @@
 (sym_lib_table
-  (lib (name bms)(type Legacy)(uri ${KIPRJMOD}/bms.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "bms")(type "Legacy")(uri "${KIPRJMOD}/bms.lib")(options "")(descr ""))
+  (lib (name "bms-rescue")(type "KiCad")(uri "${KIPRJMOD}/bms-rescue.kicad_sym")(options "")(descr ""))
 )

@@ -1,0 +1,31 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 47837b5d-13f0-4aa7-8424-ee2636568e90)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (hierarchical_label "SRN" (shape input) (at 72.39 82.55 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 12a903d7-ebaf-4eda-addd-c4b27bece55d)
+  )
+  (hierarchical_label "I2C_SDA" (shape bidirectional) (at 72.39 86.36 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 53c31658-fba1-45bd-ab69-8f0c423582ab)
+  )
+  (hierarchical_label "SRP" (shape input) (at 72.39 80.01 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 62fffccb-565a-498e-bb2a-85dbb4ccf8a3)
+  )
+  (hierarchical_label "I2C_SCL" (shape input) (at 72.39 88.9 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 8abba2db-fbfd-42b4-a053-af5ab9c14afb)
+  )
+  (hierarchical_label "VIN" (shape input) (at 72.39 74.93 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid e59dea5d-afe0-449e-8172-49a4ada54074)
+  )
+)

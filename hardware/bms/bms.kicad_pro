@@ -322,6 +322,23 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "a4805e9d-b940-444e-a7cb-db4f4c53ed46",
+      ""
+    ],
+    [
+      "00000000-0000-0000-0000-00006523a805",
+      "BATTERY BALANCE AND MONITOR"
+    ],
+    [
+      "00000000-0000-0000-0000-00006523ab32",
+      "BATTERY CHARGER"
+    ],
+    [
+      "00000000-0000-0000-0000-00006658c265",
+      "MCU"
+    ]
+  ],
   "text_variables": {}
 }
