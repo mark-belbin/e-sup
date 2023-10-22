@@ -7,4 +7,21 @@
   (lib_symbols
   )
 
+
+  (hierarchical_label "MCU_SCL" (shape output) (at 49.53 57.15 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 044bd538-240c-4d6e-be83-b48ec69ba30b)
+  )
+  (hierarchical_label "MCU_VIN" (shape input) (at 49.53 40.64 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 6cd62596-56bf-47f9-9bfe-7fbfcfd66305)
+  )
+  (hierarchical_label "MCU_PWR_EN" (shape input) (at 49.53 44.45 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 6f250a41-9f1f-4326-a5e6-9e86e9993c6b)
+  )
+  (hierarchical_label "MCU_SDA" (shape bidirectional) (at 49.53 53.34 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid b7e774a6-d447-4140-bfe9-34904b57c59b)
+  )
 )

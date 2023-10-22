@@ -130,11 +130,11 @@
   )
 
 
-  (hierarchical_label "CHG_IN+" (shape input) (at 83.82 66.04 180)
+  (hierarchical_label "CHG_IN+" (shape input) (at 83.82 66.04 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 2b28e8ae-9bd2-48f8-bf0f-6f67cf40e3c5)
   )
-  (hierarchical_label "CHG_OUT+" (shape output) (at 85.09 73.66 180)
+  (hierarchical_label "CHG_OUT+" (shape output) (at 85.09 73.66 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid ccb1fd21-7beb-4583-b00d-9fefefcf1076)
   )
