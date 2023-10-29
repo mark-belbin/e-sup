@@ -242,6 +242,8 @@
   (net 164 "unconnected-(U6-NC-Pad33)")
   (net 165 "unconnected-(U6-NC-Pad34)")
   (net 166 "unconnected-(U6-NC-Pad35)")
+  (net 167 "/BATTERY CHARGER/SRN_CHG")
+  (net 168 "Net-(L1-Pad2)")
 
   (footprint "Connector_Molex:Molex_PicoBlade_53261-1071_1x10-1MP_P1.25mm_Horizontal" (layer "F.Cu")
     (tstamp 0199be99-f4f7-4a12-ae68-0e364e36f2f5)
@@ -955,6 +957,39 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+  )
+
+  (footprint "NetTie:NetTie-2_SMD_Pad0.5mm" (layer "F.Cu")
+    (tstamp 0b2b022e-31aa-4a1d-af4d-36e68ec123d7)
+    (at 66.7 28.4)
+    (descr "Net tie, 2 pin, 0.5mm square SMD pads")
+    (tags "net tie")
+    (property "Sheetfile" "charger.kicad_sch")
+    (property "Sheetname" "BATTERY CHARGER")
+    (path "/00000000-0000-0000-0000-00006523ab32/c2ed845c-c78e-4c2f-8781-959db1fd8d63")
+    (attr exclude_from_pos_files allow_missing_courtyard)
+    (net_tie_pad_groups "1, 2")
+    (fp_text reference "NT4" (at 0 -1.2) (layer "F.SilkS") hide
+        (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 01980b03-3d9c-4815-910c-a22e9705dadd)
+    )
+    (fp_text value "Net-Tie" (at 0 1.2) (layer "F.Fab") hide
+        (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 53c529a3-0d9c-4f45-a33f-ae08698dd1d2)
+    )
+    (fp_poly
+      (pts
+        (xy -0.5 -0.25)
+        (xy 0.5 -0.25)
+        (xy 0.5 0.25)
+        (xy -0.5 0.25)
+      )
+
+      (stroke (width 0) (type solid)) (fill solid) (layer "F.Cu") (tstamp 887c8925-c6b3-4eac-a986-729891bea514))
+    (pad "1" smd circle (at -0.5 0) (size 0.5 0.5) (layers "F.Cu")
+      (net 168 "Net-(L1-Pad2)") (pinfunction "1") (pintype "passive") (tstamp b1c8710e-938b-416f-b909-2c14e8f6b901))
+    (pad "2" smd circle (at 0.5 0) (size 0.5 0.5) (layers "F.Cu")
+      (net 39 "/BATTERY CHARGER/SRP_CHG") (pinfunction "2") (pintype "passive") (tstamp 1e26dbc0-91be-4822-90f7-e6eb1c7c9897))
   )
 
   (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
@@ -5226,7 +5261,7 @@
     (fp_line (start 0.8 0.4) (end -0.8 0.4)
       (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp f54c8fe6-5306-40ca-814d-7298229c2890))
     (pad "1" smd roundrect (at -0.775 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
-      (net 3 "/BATTERY BALANCE AND MONITOR/VCHG+") (pintype "passive") (tstamp 21c834f4-98af-4731-943e-572e2c151bec))
+      (net 167 "/BATTERY CHARGER/SRN_CHG") (pintype "passive") (tstamp 21c834f4-98af-4731-943e-572e2c151bec))
     (pad "2" smd roundrect (at 0.775 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 39 "/BATTERY CHARGER/SRP_CHG") (pintype "passive") (tstamp a2c3ab80-e92c-4197-b47d-1fd5332b8c99))
     (model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
@@ -7441,7 +7476,7 @@
     (pad "12" smd roundrect (at 1.25 1.9875) (size 0.25 0.775) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 42 "/BATTERY CHARGER/VFB") (pinfunction "VFB") (pintype "input") (tstamp 35a83183-1fd9-4530-b15c-0666e7aac319))
     (pad "13" smd roundrect (at 1.9875 1.25) (size 0.775 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
-      (net 3 "/BATTERY BALANCE AND MONITOR/VCHG+") (pinfunction "SRN") (pintype "input") (tstamp 059e0e58-2bf0-43ef-a530-3e5ce010bd10))
+      (net 167 "/BATTERY CHARGER/SRN_CHG") (pinfunction "SRN") (pintype "input") (tstamp 059e0e58-2bf0-43ef-a530-3e5ce010bd10))
     (pad "14" smd roundrect (at 1.9875 0.75) (size 0.775 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 39 "/BATTERY CHARGER/SRP_CHG") (pinfunction "SRP") (pintype "input") (tstamp 5b049133-f008-43b7-97f1-017f2de1c149))
     (pad "15" smd roundrect (at 1.9875 0.25) (size 0.775 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
@@ -10064,7 +10099,7 @@
     (pad "1" smd roundrect (at -5.475 0 180) (size 3.25 4.9) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 37 "/BATTERY CHARGER/SW_NODE") (pinfunction "1") (pintype "passive") (thermal_bridge_angle 45) (tstamp 403fb132-2f5f-44d8-b770-90e711e767e7))
     (pad "2" smd roundrect (at 5.475 0 180) (size 3.25 4.9) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
-      (net 39 "/BATTERY CHARGER/SRP_CHG") (pinfunction "2") (pintype "passive") (thermal_bridge_angle 45) (tstamp 09b6ec7c-6628-4214-9051-68e9cb586e7f))
+      (net 168 "Net-(L1-Pad2)") (pinfunction "2") (pintype "passive") (thermal_bridge_angle 45) (tstamp 09b6ec7c-6628-4214-9051-68e9cb586e7f))
     (model "./3d_models/HCM1307-R.STEP"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
@@ -11923,6 +11958,39 @@
     )
   )
 
+  (footprint "NetTie:NetTie-2_SMD_Pad0.5mm" (layer "F.Cu")
+    (tstamp b313b4a2-6688-48d6-8794-7d74512e3bb0)
+    (at 66.7 29.9)
+    (descr "Net tie, 2 pin, 0.5mm square SMD pads")
+    (tags "net tie")
+    (property "Sheetfile" "charger.kicad_sch")
+    (property "Sheetname" "BATTERY CHARGER")
+    (path "/00000000-0000-0000-0000-00006523ab32/2103b872-3bd1-4c5b-9327-3775aa4b4a5b")
+    (attr exclude_from_pos_files allow_missing_courtyard)
+    (net_tie_pad_groups "1, 2")
+    (fp_text reference "NT5" (at 0 -1.2) (layer "F.SilkS") hide
+        (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 854cd48d-cbb2-4a35-a9a2-4a1dfcd98e45)
+    )
+    (fp_text value "Net-Tie" (at 0 1.2) (layer "F.Fab") hide
+        (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 5bebfe72-41bc-4777-989c-e6f841304fa0)
+    )
+    (fp_poly
+      (pts
+        (xy -0.5 -0.25)
+        (xy 0.5 -0.25)
+        (xy 0.5 0.25)
+        (xy -0.5 0.25)
+      )
+
+      (stroke (width 0) (type solid)) (fill solid) (layer "F.Cu") (tstamp c40345ed-250d-4c8a-940d-6f54a0518bdd))
+    (pad "1" smd circle (at -0.5 0) (size 0.5 0.5) (layers "F.Cu")
+      (net 3 "/BATTERY BALANCE AND MONITOR/VCHG+") (pinfunction "1") (pintype "passive") (tstamp 3cf0ddeb-6857-4b37-b37f-eda9af48f246))
+    (pad "2" smd circle (at 0.5 0) (size 0.5 0.5) (layers "F.Cu")
+      (net 167 "/BATTERY CHARGER/SRN_CHG") (pinfunction "2") (pintype "passive") (tstamp 9a4481cd-f63d-40ba-ad8d-a1f9b0b712e2))
+  )
+
   (footprint "TestPoint:TestPoint_Pad_D1.0mm" (layer "F.Cu")
     (tstamp b321ed3b-5a05-46f9-b0fb-1279bfe6ca22)
     (at 83.165 53.47)
@@ -13448,7 +13516,7 @@
     (pad "1" smd roundrect (at -2.9625 0) (size 1.225 3.35) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.204082)
       (net 3 "/BATTERY BALANCE AND MONITOR/VCHG+") (pintype "passive") (tstamp 17d3b7ff-9246-4985-a48d-4f0b96d66e31))
     (pad "2" smd roundrect (at 2.9625 0) (size 1.225 3.35) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.204082)
-      (net 39 "/BATTERY CHARGER/SRP_CHG") (pintype "passive") (tstamp 7a7caef2-47a9-468a-88e1-7ef6136eadd5))
+      (net 168 "Net-(L1-Pad2)") (pintype "passive") (tstamp 7a7caef2-47a9-468a-88e1-7ef6136eadd5))
     (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
