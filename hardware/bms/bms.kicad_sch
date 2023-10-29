@@ -6,7 +6,7 @@
 
   (title_block
     (title "eSUP - BMS + Charger Board")
-    (date "2023-10-09")
+    (date "2023-10-29")
     (rev "V1")
   )
 
@@ -1294,6 +1294,9 @@
   (junction (at 46.99 82.55) (diameter 0) (color 0 0 0 0)
     (uuid c7713a17-be5e-4465-83ef-b4ea5844da36)
   )
+  (junction (at 224.79 107.95) (diameter 0) (color 0 0 0 0)
+    (uuid cb304465-dcad-4262-886d-b8b2a84d4032)
+  )
   (junction (at 105.41 185.42) (diameter 0) (color 0 0 0 0)
     (uuid d5d1b9df-aa4e-4256-a4a5-75643285963d)
   )
@@ -1398,6 +1401,10 @@
   (wire (pts (xy 34.29 165.1) (xy 34.29 167.64))
     (stroke (width 0) (type default))
     (uuid 0afb7bc4-01ba-4db9-91b1-165b9004f3c3)
+  )
+  (wire (pts (xy 232.41 113.03) (xy 234.95 113.03))
+    (stroke (width 0) (type default))
+    (uuid 0b71d27a-ed6a-490b-8b09-6c3c6c502c12)
   )
   (wire (pts (xy 85.09 179.07) (xy 85.09 177.8))
     (stroke (width 0) (type default))
@@ -1833,6 +1840,10 @@
     (stroke (width 0) (type default))
     (uuid aa061469-b39f-4ae1-ac04-3fbb1ff1e2d0)
   )
+  (wire (pts (xy 224.79 107.95) (xy 234.95 107.95))
+    (stroke (width 0) (type default))
+    (uuid aeb54165-0e9d-48c1-90b3-b21d5ffaf6f5)
+  )
   (bus (pts (xy 66.04 138.43) (xy 66.04 140.97))
     (stroke (width 0) (type default))
     (uuid b03b95af-392d-409d-9638-c706e9791a1b)
@@ -1900,6 +1911,10 @@
     (uuid bfb4de48-4214-4034-b08c-559a568b6258)
   )
 
+  (wire (pts (xy 224.79 107.95) (xy 224.79 113.03))
+    (stroke (width 0) (type default))
+    (uuid bfe761c1-81b1-4e94-ac62-841e35c306d8)
+  )
   (wire (pts (xy 247.65 92.71) (xy 247.65 83.82))
     (stroke (width 0) (type default))
     (uuid c42b7d49-ff95-4eda-9b4f-8fa63c789e5e)
@@ -1957,7 +1972,7 @@
     (stroke (width 0) (type default))
     (uuid d567143f-df9e-4d3f-adfb-dbd9052fc4c2)
   )
-  (wire (pts (xy 226.06 107.95) (xy 234.95 107.95))
+  (wire (pts (xy 220.98 107.95) (xy 224.79 107.95))
     (stroke (width 0) (type default))
     (uuid d57349b6-c569-4873-a34f-ed9426a93878)
   )
@@ -1980,6 +1995,10 @@
   (wire (pts (xy 44.45 135.89) (xy 63.5 135.89))
     (stroke (width 0) (type default))
     (uuid d90bd84d-d2d9-4750-8b24-09f2f1de9d85)
+  )
+  (wire (pts (xy 227.33 113.03) (xy 224.79 113.03))
+    (stroke (width 0) (type default))
+    (uuid da3f4ec3-3139-4480-aa51-95b8bd66c6ce)
   )
   (wire (pts (xy 248.92 62.23) (xy 248.92 63.5))
     (stroke (width 0) (type default))
@@ -2251,7 +2270,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 14c517be-eb71-4d9c-a25d-df738a802696)
   )
-  (label "VUSB_5V" (at 226.06 107.95 0) (fields_autoplaced)
+  (label "VUSB_5V" (at 220.98 107.95 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 21760413-a33b-4bc6-9804-30363c41af85)
   )
@@ -2375,7 +2394,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 255.27 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006657453a)
-    (property "Reference" "J?" (at 257.302 54.7116 0)
+    (property "Reference" "J6" (at 257.302 54.7116 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x02" (at 257.302 55.8546 0)
@@ -2398,7 +2417,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "J?") (unit 1)
+          (reference "J6") (unit 1)
         )
       )
     )
@@ -2407,7 +2426,7 @@
   (symbol (lib_id "power:GND") (at 248.92 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006657629a)
-    (property "Reference" "#PWR?" (at 248.92 69.85 0)
+    (property "Reference" "#PWR070" (at 248.92 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 248.92 67.31 0)
@@ -2423,7 +2442,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR070") (unit 1)
         )
       )
     )
@@ -2432,7 +2451,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x07") (at 39.37 135.89 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006658a172)
-    (property "Reference" "J?" (at 35.56 129.54 0)
+    (property "Reference" "J13" (at 35.56 129.54 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x07" (at 41.4528 124.8664 0)
@@ -2460,7 +2479,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "J?") (unit 1)
+          (reference "J13") (unit 1)
         )
       )
     )
@@ -2469,7 +2488,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 39.37 46.99 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006672ba1f)
-    (property "Reference" "J?" (at 35.56 46.99 0)
+    (property "Reference" "J5" (at 35.56 46.99 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x02" (at 37.338 49.5046 0)
@@ -2492,7 +2511,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "J?") (unit 1)
+          (reference "J5") (unit 1)
         )
       )
     )
@@ -2501,7 +2520,7 @@
   (symbol (lib_id "power:GND") (at 46.99 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006672d088)
-    (property "Reference" "#PWR?" (at 46.99 58.42 0)
+    (property "Reference" "#PWR069" (at 46.99 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 46.99 55.88 0)
@@ -2517,7 +2536,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR069") (unit 1)
         )
       )
     )
@@ -2526,7 +2545,7 @@
   (symbol (lib_id "Connector:Screw_Terminal_01x01") (at 39.37 40.64 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000066731125)
-    (property "Reference" "J?" (at 35.56 40.64 0)
+    (property "Reference" "J3" (at 35.56 40.64 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Screw_Terminal_01x01" (at 37.338 39.3954 0)
@@ -2548,7 +2567,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "J?") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
     )
@@ -2557,7 +2576,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 34.29 162.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000066733f6d)
-    (property "Reference" "H?" (at 33.02 157.48 0)
+    (property "Reference" "H1" (at 33.02 157.48 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole_Pad" (at 36.83 163.6268 0)
@@ -2573,7 +2592,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "H?") (unit 1)
+          (reference "H1") (unit 1)
         )
       )
     )
@@ -2582,7 +2601,7 @@
   (symbol (lib_id "power:GNDPWR") (at 34.29 167.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000066736f98)
-    (property "Reference" "#PWR?" (at 34.29 172.72 0)
+    (property "Reference" "#PWR071" (at 34.29 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDPWR" (at 34.3916 171.5516 0)
@@ -2598,7 +2617,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR071") (unit 1)
         )
       )
     )
@@ -2607,7 +2626,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 44.45 162.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006673893a)
-    (property "Reference" "H?" (at 43.18 157.48 0)
+    (property "Reference" "H2" (at 43.18 157.48 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole_Pad" (at 46.99 163.6268 0)
@@ -2623,7 +2642,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "H?") (unit 1)
+          (reference "H2") (unit 1)
         )
       )
     )
@@ -2632,7 +2651,7 @@
   (symbol (lib_id "power:GNDPWR") (at 44.45 167.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000066738941)
-    (property "Reference" "#PWR?" (at 44.45 172.72 0)
+    (property "Reference" "#PWR072" (at 44.45 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDPWR" (at 44.5516 171.5516 0)
@@ -2648,7 +2667,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR072") (unit 1)
         )
       )
     )
@@ -2657,7 +2676,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 54.61 162.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000066739916)
-    (property "Reference" "H?" (at 53.34 157.48 0)
+    (property "Reference" "H3" (at 53.34 157.48 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole_Pad" (at 57.15 163.6268 0)
@@ -2673,7 +2692,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "H?") (unit 1)
+          (reference "H3") (unit 1)
         )
       )
     )
@@ -2682,7 +2701,7 @@
   (symbol (lib_id "power:GNDPWR") (at 54.61 167.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006673991d)
-    (property "Reference" "#PWR?" (at 54.61 172.72 0)
+    (property "Reference" "#PWR073" (at 54.61 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDPWR" (at 54.7116 171.5516 0)
@@ -2698,7 +2717,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR073") (unit 1)
         )
       )
     )
@@ -2707,7 +2726,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 64.77 162.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006673baa3)
-    (property "Reference" "H?" (at 63.5 157.48 0)
+    (property "Reference" "H4" (at 63.5 157.48 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole_Pad" (at 67.31 163.6268 0)
@@ -2723,7 +2742,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "H?") (unit 1)
+          (reference "H4") (unit 1)
         )
       )
     )
@@ -2732,7 +2751,7 @@
   (symbol (lib_id "power:GNDPWR") (at 64.77 167.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006673baaa)
-    (property "Reference" "#PWR?" (at 64.77 172.72 0)
+    (property "Reference" "#PWR074" (at 64.77 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDPWR" (at 64.8716 171.5516 0)
@@ -2748,7 +2767,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR074") (unit 1)
         )
       )
     )
@@ -2757,7 +2776,7 @@
   (symbol (lib_id "power:GNDPWR") (at 30.48 186.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006673c088)
-    (property "Reference" "#PWR?" (at 30.48 191.77 0)
+    (property "Reference" "#PWR076" (at 30.48 191.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDPWR" (at 30.5816 190.6016 0)
@@ -2773,7 +2792,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR076") (unit 1)
         )
       )
     )
@@ -2782,7 +2801,7 @@
   (symbol (lib_id "power:GND") (at 24.13 180.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006673c857)
-    (property "Reference" "#PWR?" (at 24.13 186.69 0)
+    (property "Reference" "#PWR075" (at 24.13 186.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 24.257 184.7342 0)
@@ -2798,7 +2817,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR075") (unit 1)
         )
       )
     )
@@ -2833,7 +2852,7 @@
           (reference "R?") (unit 1)
         )
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "R?") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -2871,7 +2890,7 @@
           (reference "C?") (unit 1)
         )
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "C?") (unit 1)
+          (reference "C3") (unit 1)
         )
       )
     )
@@ -2909,7 +2928,7 @@
           (reference "C?") (unit 1)
         )
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "C?") (unit 1)
+          (reference "C4") (unit 1)
         )
       )
     )
@@ -2947,7 +2966,7 @@
           (reference "C?") (unit 1)
         )
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "C?") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
@@ -2985,7 +3004,7 @@
           (reference "C?") (unit 1)
         )
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "C?") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
@@ -3023,7 +3042,7 @@
           (reference "C?") (unit 1)
         )
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "C?") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -3058,7 +3077,7 @@
           (reference "R?") (unit 1)
         )
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "R?") (unit 1)
+          (reference "R5") (unit 1)
         )
       )
     )
@@ -3096,7 +3115,7 @@
           (reference "C?") (unit 1)
         )
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "C?") (unit 1)
+          (reference "C8") (unit 1)
         )
       )
     )
@@ -3134,7 +3153,7 @@
           (reference "C?") (unit 1)
         )
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "C?") (unit 1)
+          (reference "C9") (unit 1)
         )
       )
     )
@@ -3172,7 +3191,7 @@
           (reference "C?") (unit 1)
         )
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "C?") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
     )
@@ -3207,7 +3226,7 @@
           (reference "R?") (unit 1)
         )
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "R?") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -3216,7 +3235,7 @@
   (symbol (lib_id "Connector:Screw_Terminal_01x01") (at 39.37 36.83 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000066b13502)
-    (property "Reference" "J?" (at 35.56 36.83 0)
+    (property "Reference" "J1" (at 35.56 36.83 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Screw_Terminal_01x01" (at 37.338 35.5854 0)
@@ -3238,7 +3257,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "J?") (unit 1)
+          (reference "J1") (unit 1)
         )
       )
     )
@@ -3247,7 +3266,7 @@
   (symbol (lib_id "Connector:Screw_Terminal_01x01") (at 255.27 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000066b13f97)
-    (property "Reference" "J?" (at 259.08 36.83 0)
+    (property "Reference" "J2" (at 259.08 36.83 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Screw_Terminal_01x01" (at 257.302 38.0746 0)
@@ -3269,7 +3288,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "J?") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
     )
@@ -3278,7 +3297,7 @@
   (symbol (lib_id "Connector:Screw_Terminal_01x01") (at 255.27 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000066b15aa2)
-    (property "Reference" "J?" (at 259.08 40.64 0)
+    (property "Reference" "J4" (at 259.08 40.64 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Screw_Terminal_01x01" (at 257.302 41.8846 0)
@@ -3300,7 +3319,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "J?") (unit 1)
+          (reference "J4") (unit 1)
         )
       )
     )
@@ -3391,7 +3410,7 @@
           (reference "R?") (unit 1)
         )
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "R?") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -3447,7 +3466,7 @@
           (reference "TP?") (unit 1)
         )
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "TP?") (unit 1)
+          (reference "TP1") (unit 1)
         )
       )
     )
@@ -3456,7 +3475,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 255.27 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5a20e2c5-7a25-438a-9ed4-0b5c050d7d9f)
-    (property "Reference" "J?" (at 257.302 82.6516 0)
+    (property "Reference" "J8" (at 257.302 82.6516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x02" (at 257.302 83.7946 0)
@@ -3479,7 +3498,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "J?") (unit 1)
+          (reference "J8") (unit 1)
         )
       )
     )
@@ -3514,7 +3533,7 @@
           (reference "R?") (unit 1)
         )
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "R?") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -3523,7 +3542,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 217.17 132.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 92a44d8d-fdbb-49a6-973b-dfc12837bd65)
-    (property "Reference" "J?" (at 215.9 127 0)
+    (property "Reference" "J12" (at 215.9 127 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x03" (at 219.71 133.35 0)
@@ -3547,7 +3566,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "J?") (unit 1)
+          (reference "J12") (unit 1)
         )
       )
     )
@@ -3556,7 +3575,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x10") (at 39.37 107.95 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a55c9096-9867-4305-84b8-772fbcba5a23)
-    (property "Reference" "J?" (at 35.56 96.52 0)
+    (property "Reference" "J10" (at 35.56 96.52 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x10" (at 39.37 124.46 0)
@@ -3587,7 +3606,48 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "J?") (unit 1)
+          (reference "J10") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R_Small_US") (at 229.87 113.03 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid b82e05a8-e644-4c8f-9db7-83ac7309f59c)
+    (property "Reference" "R?" (at 228.6 110.49 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "56k" (at 232.41 110.49 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 229.87 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 229.87 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFG" "Panasonic Electronic Components" (at 229.87 113.03 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MFG PN" "ERJ-3EKF5602V" (at 229.87 113.03 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Power" "1/10W" (at 229.87 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3cf13f6f-f85f-4c2f-966c-7ad87ad73f12))
+    (pin "2" (uuid 7e8a2569-326a-42e6-b5b1-45a43c289a9c))
+    (instances
+      (project "bms"
+        (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46/00000000-0000-0000-0000-00006523a805"
+          (reference "R?") (unit 1)
+        )
+        (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46/00000000-0000-0000-0000-00006523ab32"
+          (reference "R?") (unit 1)
+        )
+        (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
+          (reference "R?") (unit 1)
         )
       )
     )
@@ -3628,7 +3688,7 @@
           (reference "D?") (unit 1)
         )
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "D?") (unit 1)
+          (reference "D2") (unit 1)
         )
       )
     )
@@ -3664,7 +3724,7 @@
           (reference "Q?") (unit 1)
         )
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "Q?") (unit 1)
+          (reference "Q1") (unit 1)
         )
       )
     )
@@ -3727,7 +3787,7 @@
           (reference "SW?") (unit 1)
         )
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "SW?") (unit 1)
+          (reference "SW1") (unit 1)
         )
       )
     )
@@ -3793,7 +3853,7 @@
           (reference "D?") (unit 1)
         )
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "D?") (unit 1)
+          (reference "D3") (unit 1)
         )
       )
     )
@@ -3824,7 +3884,7 @@
           (reference "TP?") (unit 1)
         )
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "TP?") (unit 1)
+          (reference "TP2") (unit 1)
         )
       )
     )
@@ -3957,7 +4017,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x10") (at 39.37 80.01 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e6796853-b2b7-4d57-90bf-b8da5202c408)
-    (property "Reference" "J?" (at 35.56 68.58 0)
+    (property "Reference" "J7" (at 35.56 68.58 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x10" (at 39.37 96.52 0)
@@ -3988,7 +4048,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "J?") (unit 1)
+          (reference "J7") (unit 1)
         )
       )
     )
@@ -3997,7 +4057,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 255.27 90.17 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f4473724-1e64-4784-b3da-8c3f10809dae)
-    (property "Reference" "J?" (at 257.302 91.5416 0)
+    (property "Reference" "J9" (at 257.302 91.5416 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x02" (at 257.302 92.6846 0)
@@ -4020,7 +4080,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "J?") (unit 1)
+          (reference "J9") (unit 1)
         )
       )
     )
@@ -4029,7 +4089,7 @@
   (symbol (lib_id "Connector:USB_C_Plug_USB2.0") (at 250.19 123.19 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fd5141c5-102b-446a-94dc-cae2425fc01c)
-    (property "Reference" "J?" (at 241.3 104.14 0)
+    (property "Reference" "J11" (at 241.3 104.14 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "USB_C_Plug_USB2.0" (at 255.27 104.14 0)
@@ -4057,7 +4117,7 @@
     (instances
       (project "bms"
         (path "/a4805e9d-b940-444e-a7cb-db4f4c53ed46"
-          (reference "J?") (unit 1)
+          (reference "J11") (unit 1)
         )
       )
     )
