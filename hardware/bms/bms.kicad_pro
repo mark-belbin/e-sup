@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 3.25,
+          "width": 3.43
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -45,7 +45,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.09999999999999999
+          "min_clearance": 0.4064
         }
       },
       "diff_pair_dimensions": [
@@ -172,7 +172,9 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.2032,
+        0.508
       ],
       "via_dimensions": [
         {
@@ -445,7 +447,7 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1524,
         "via_diameter": 0.5588,
-        "via_drill": 0.3048,
+        "via_drill": 0.254,
         "wire_width": 6
       }
     ],
