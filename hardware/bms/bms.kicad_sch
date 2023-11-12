@@ -2638,7 +2638,7 @@
     (effects (font (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
     (uuid ef84776b-0cf2-4784-8724-835bc3028354)
   )
-  (text "M4 Lugs" (at 265.43 41.91 0)
+  (text "M4 Terminals" (at 265.43 41.91 0)
     (effects (font (size 1.016 1.016) italic) (justify left bottom))
     (uuid f2e76ef2-1873-466e-9a9d-4a2ceb93316a)
   )
