@@ -3563,7 +3563,7 @@
     (property "Value" "LM5166X" (at 93.98 38.1 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_SON:Texas_S-PVSON-N10_ThermalVias" (at 95.25 62.23 0)
+    (property "Footprint" "bms:Texas_S-PVSON-N10_ThermalVias" (at 95.25 62.23 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm5166.pdf" (at 93.98 36.83 0)
