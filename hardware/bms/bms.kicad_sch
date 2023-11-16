@@ -2944,7 +2944,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 96.52 152.4 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000066733f6d)
     (property "Reference" "H1" (at 91.44 151.13 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -2994,7 +2994,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 106.68 152.4 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006673893a)
     (property "Reference" "H2" (at 101.6 151.13 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -3019,7 +3019,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 116.84 152.4 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000066739916)
     (property "Reference" "H3" (at 111.76 151.13 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -3044,7 +3044,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 127 152.4 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006673baa3)
     (property "Reference" "H4" (at 121.92 151.13 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -4087,7 +4087,7 @@
     (property "MFG" "CUI Devices" (at 240.03 64.77 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "MFG PN" "DIP SWITCH, SPST, 2.54 PITCH, FL" (at 240.03 64.77 90)
+    (property "MFG PN" "DS04-254-2-01BK-SMT" (at 240.03 64.77 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 230c3c4d-0a21-497e-b22d-94870b574570))
